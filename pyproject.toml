@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "douyin-link-text-extractor"
+version = "0.1.0"
+description = "Extract plain text transcript from a Douyin link"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "KeNan-tech620" }
+]
+dependencies = [
+  "playwright>=1.58.0",
+  "faster-whisper>=1.2.1",
+  "requests>=2.32.5"
+]
+keywords = ["douyin", "transcript", "speech-to-text", "whisper", "crawler"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Topic :: Multimedia :: Video",
+  "Topic :: Text Processing",
+]
+
+[project.scripts]
+douyin-link-text = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]

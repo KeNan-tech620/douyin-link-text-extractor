@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Local dependencies / caches
+.deps/
+.model_cache/
+
+# Output
+out/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Build
+build/
+dist/
+*.egg-info/

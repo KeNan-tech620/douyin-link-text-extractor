@@ -6,6 +6,7 @@ __pycache__/
 # Local dependencies / caches
 .deps/
 .model_cache/
+.venv/
 
 # Output
 out/
